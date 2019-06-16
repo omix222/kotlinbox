@@ -1,0 +1,38 @@
+<html lang="jp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" th:href="@{/css/materialize.min.css}" media="screen,projection"/>
+
+    <title>lsken group</title>
+</head>
+<body>
+
+</div>
+<h2>質問一覧</h2>
+
+<table class="striped highlight">
+    <thead>
+    <tr>
+        <td>質問No</td>
+        <td>質問内容</td>
+        <td>回答</td>
+        <td>回答者ID</td>
+        <td>ステータス</td>
+    </tr>
+    </thead>
+    <tbody th:each="list : ${questions}">
+    <tr>
+        <td class="text-str" th:text="${list.id}"></td>
+        <td class="text-str" th:text="${list.description}"></td>
+        <td class="text-str" th:text="${list.answer}"></td>
+        <td class="text-str" th:text="${list.menterId}"></td>
+        <td class="text-str" th:text="${list.status}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript" src="js/materialize.min.js" th:src="@{js/materialize.min.js}"></script>
+
+</body>
+</html>
