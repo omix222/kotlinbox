@@ -1,13 +1,13 @@
 package com.example.omix222.kotlinbox
 
-//import org.junit.jupiter.api.Test
 
-//import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.Test
+import org.junit.Assert.assertEquals
 
 internal class GreetingControllerTest {
-    val target = GreetingController()
+    private val target = GreetingController()
 
-  //  @Test
-//    fun hello() =
-//        assertEquals(target.hello(),"hello kotlin !!")
+   @Test
+    fun hello() =
+        assertEquals(target.hello(),"hello kotlin !!")
 }
