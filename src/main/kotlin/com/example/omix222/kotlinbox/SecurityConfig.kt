@@ -16,7 +16,8 @@ open class SecurityConfig : WebSecurityConfigurerAdapter() {
             "/css/**",
             "/javascript/**",
             "/webjars/**",
-            "/hello"
+            "/hello",
+            "/question"
         )
     }
 
